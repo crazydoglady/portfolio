@@ -1,6 +1,6 @@
 .outerwrap {
   height: 100%;
-  padding-top: 100px;
+  padding-top: 10px;
   padding: bottom; }
 
 .menu {
@@ -23,9 +23,10 @@
   .photos li .fa {
     margin-top: 2.5%;
     margin-left: 12%;
-    color: #142E32; }
+    color: #574C4A; }
 
 .container {
+  z-index: 0;
   margin: 1% 0 1% 0;
   padding-top: 1%;
   position: relative;
@@ -33,9 +34,8 @@
   height: 150px;
   font-family: arial;
   font-size: 40px;
-  background-color: #142E32;
+  background-color: #8B8482;
   color: white;
-  border-radius: 20px;
   text-align: center;
   vertical-align: center; }
 
@@ -52,7 +52,7 @@
   .photos2 li .fa {
     margin-top: 2.5%;
     margin-left: 12%;
-    color: #142E32; }
+    color: #574C4A; }
 
 img {
   height: 100%;
@@ -60,56 +60,66 @@ img {
   border-radius: 5px; }
 
 .first {
+  z-index: 9993;
   margin: 0 0 0 25%;
   height: 50px;
-  background: #6A6A61;
-  border: 10px solid #6A6A61;
+  background: #8B8482;
+  border: 10px solid #8B8482;
   border-radius: 7px;
   color: #C46720;
+  bo2-shaw: 1px 1px 3px #574C4A;
   -webkit-animation: spin 1s;
   -moz-animation: spin 1s;
   -o-animation: spin 1s;
   animation: spin 1s; }
 
 .scnd {
+  z-index: 9993;
   height: 75px;
   margin: 0 0 0 5px;
-  background: #958976;
-  border: 10px solid #958976;
+  background: #D9D5C9;
+  border: 10px solid #D9D5C9;
   border-radius: 7px;
+  box-shadow: 1px 1px 2px #8B8482;
   -webkit-animation: spin 2s;
   -moz-animation: spin 2s;
   -o-animation: spin 2s;
   animation: spin 2s; }
 
 .three {
-  background: #611427;
+  z-index: 9993;
+  background: #ddbf00;
   margin: 0 0 0 5px;
-  border: 10px solid #611427;
+  border: 10px solid #ddbf00;
   height: 100px;
   border-radius: 7px;
+  box-shadow: 1px 1px 2px #8B8482;
   -webkit-animation: spin 3s;
   -moz-animation: spin 3s;
   -o-animation: spin 3s;
   animation: spin 3s; }
 
 .four {
+  z-index: 9993;
   height: 75px;
   margin: 0 0 0 5px;
-  background: #958976;
-  border: 10px solid #958976;
+  background: #D9D5C9;
+  border: 10px solid #D9D5C9;
   border-radius: 7px;
+  box-shadow: 1px 1px 2px #8B8482;
   -webkit-animation: spin 4s;
   -moz-animation: spin 4s;
   -o-animation: spin 4s;
   animation: spin 4s; }
 
 .last {
+  z-index: 9993;
   height: 50px;
   margin: 0 0 0 5px;
-  background: #6A6A61;
-  border: 10px solid #6A6A61;
+  background: #8B8482;
+  border: 10px solid #8B8482;
   border-radius: 7px;
+  box-shadow: 1px 1px 2px #8B8482;
   -webkit-animation: spin 5s;
   -moz-animation: spin 5s;
   -o-animation: spin 5s;
@@ -118,7 +128,8 @@ img {
 .photos li:hover, .photos li.active {
   width: 100px;
   height: 100px;
-  box-shadow: 5px 5px 7px #000B0B;
+  z-index: 9999;
+  box-shadow: 5px 5px 7px #574C4A;
   -ms-transform: rotate(30deg);
   -webkit-transform: rotate(30deg);
   transform: rotate(30deg); }
@@ -204,19 +215,23 @@ img {
 
 .devEx {
   list-style-type: none;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 20px; }
 
 .gallery {
   text-align: center;
   height: 500px; }
   .gallery p {
-    height: 100px;
+    height: 120px;
     overflow: scroll; }
   .gallery img {
     border: 3px solid #574C4A;
     margin: 1% 0 0 0;
     height: 230px;
     width: 100%; }
+
+.describe {
+  margin: 0 1% 0 1%; }
 
 .art {
   height: 100%;
@@ -313,7 +328,7 @@ img {
 
 
 #link3 {
-  background: $dkred;
+  background: $yellow;
   height: 15px;
   margin: 4px 0 0 0;
   width: 125px;
@@ -381,15 +396,15 @@ header {
 
 #valk {
   float: right;
-  margin-top: 3%;
+  margin-top: 6%;
   height: 260px;
   width: 260px;
   border-radius: 10px;
   box-shadow: 3px 5px 5px #574C4A;
-  background: url("valBW.png");
+  background: linear-gradient(rgba(87, 76, 74, 0.2), rgba(87, 76, 74, 0.2)), url("../images/valBW.png");
   background-size: cover; }
   #valk:hover {
-    background: url("valkharvey.png");
+    background: url("../images/valkharvey.png");
     background-size: cover; }
 
 section {
@@ -398,10 +413,19 @@ section {
     color: #574C4A;
     text-decoration: none; }
     section a:hover {
-      color: #611427; }
+      color: #ddbf00; }
+
+#more {
+  text-align: center; }
+  #more a {
+    color: #8B8482; }
+    #more a:hover {
+      color: #574C4A; }
 
 footer {
-  heigth: 75px; }
+  heigth: 75px;
+  border-top: 2px solid #ddbf00;
+  background: #A69F99; }
   footer ul li {
     text-align: center;
     display: inline-block; }
@@ -409,6 +433,6 @@ footer {
       color: #574C4A;
       text-decoration: none; }
       footer ul li a:hover {
-        color: #611427; }
+        color: #ddbf00; }
 
 /*# sourceMappingURL=styles.css.map */

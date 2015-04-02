@@ -19,15 +19,15 @@ header {
 
 #valk {
 	float: right;
-	margin-top: 3%;
+	margin-top: 6%;
 	height: 260px;
 	width: 260px;
 	border-radius: 10px;
 	box-shadow: 3px 5px 5px $dkgrey;
-	background: url('valBW.png');
+	background: linear-gradient(rgba(87, 76, 74, 0.2), rgba(87, 76, 74, 0.2)), url('../images/valBW.png');
 	background-size: cover;
 	&:hover{
-		background: url('valkharvey.png');
+		background: url('../images/valkharvey.png');
 		background-size: cover;
 	}
 }
@@ -38,13 +38,25 @@ section {
 	  color: $dkgrey;
 	  text-decoration: none;
 	  &:hover{
-		color: $dkred;
+		color: $yellow;
 			}
 		}	
 }
 
+#more {
+	text-align: center;
+	a {
+	 color: $grey;
+	 &:hover {
+		color: $dkgrey;
+	 }
+	}
+}
+
 footer {
 	heigth: 75px;
+	border-top: 2px solid $yellow;
+	background: $ltgrey;
 	ul li {
 		text-align: center;
 		display: inline-block;
@@ -52,7 +64,7 @@ footer {
 			color: $dkgrey;
 			text-decoration: none;
 			&:hover{
-				color: $dkred;
+				color: $yellow;
 			}
 		}	
 	}
