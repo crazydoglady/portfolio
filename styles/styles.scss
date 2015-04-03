@@ -17,9 +17,22 @@ header {
 	height: 100%;
 }
 
+a {
+	color: $dkgrey;
+   &:hover {
+	color: $yellow;
+	}	
+}
+.bio {
+	p{
+		margin-right: 5px;
+	}
+	
+}
+
 #valk {
-	float: right;
-	margin-top: 6%;
+	vertical-align: middle;
+	margin: 0 0 0 10%;
 	height: 260px;
 	width: 260px;
 	border-radius: 10px;
@@ -69,8 +82,18 @@ footer {
 		}	
 	}
 }
-
-
+.moreInfo {
+	display: none;
+}
+.viewMore {
+	background: blue;
+}
+.workInfo {
+	display: none;
+}
+.active {
+	display: inline-block;
+}
 
 
 

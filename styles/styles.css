@@ -25,7 +25,7 @@
     margin-left: 12%;
     color: #574C4A; }
 
-.container {
+.container, .container2 {
   z-index: 0;
   margin: 1% 0 1% 0;
   padding-top: 1%;
@@ -181,20 +181,12 @@ img {
     -webkit-transform: rotate(40deg); }
   100% {
     -webkit-transform: rotate(0deg); } }
-.container2 {
-  margin: 0 0 1% 0;
-  position: relative;
-  width: 100%;
-  height: 150px;
-  font-family: arial;
-  font-size: 40px;
-  background-color: #142E32;
-  color: white;
-  vertical-align: center; }
-  .container2 h1 {
-    margin: 2% 0 0 0;
-    float: left;
+.container2 ul {
+  list-style-type: none; }
+  .container2 ul li {
     display: inline-block; }
+    .container2 ul li a {
+      color: #574C4A; }
 
 .miniMenu {
   display: inline-block;
@@ -211,7 +203,24 @@ img {
         color: white; }
 
 .resume {
-  height: 100vh; }
+  display: none; }
+
+#skills {
+  float: right; }
+  #skills li {
+    margin: 0 0 0 4%; }
+
+#experience {
+  list-style-type: none; }
+  #experience li {
+    height: 150px;
+    margin: 1% 0 0 1%;
+    background: #ddbf00;
+    border-radius: 10px; }
+    #experience li a {
+      color: #574C4A; }
+      #experience li a:hover {
+        color: white; }
 
 .devEx {
   list-style-type: none;
@@ -255,132 +264,41 @@ img {
 .about {
   height: 100%; }
 
-/*.dogs {
-	height: 100vh;
-	display: block;
-	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('swampDogs.jpg');
-	background-size: cover;
-	background-position: 0 -300px;
-	background-repeat: none;
-	#ember, #billie {
-	 width: 200px;
-     height: 200px;
-     float: right;
-     margin: 0 0 0 2%;
-	 box-shadow: 3px 5px 5px $dkgrey;
-	 border-radius: 100%;
-	}
-}
-*/
+.dogs {
+  height: 75vh;
+  display: block;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../images/swampDogs.jpg");
+  background-size: cover;
+  background-position: 0 -300px;
+  background-repeat: none; }
+  .dogs #ember, .dogs #billie {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin: 0 0 0 2%;
+    box-shadow: 3px 5px 5px #574C4A;
+    border-radius: 100%; }
+
 #ember {
-  background: url("ember.jpg");
+  background: url("../images/ember.jpg");
   background-size: cover; }
   #ember:hover {
-    background: url("emberbeach.jpg");
+    background: url("../images/embertongue.jpg");
     background-size: cover; }
 
 #billie {
-  background: url("billie.jpg");
+  background: url("../images/billie.jpg");
   background-size: cover; }
   #billie:hover {
-    background: url("billiebed.jpg");
+    background: url("../images/billieroar.jpg");
     background-size: cover; }
 
 .billie, .ember {
   margin-top: 5%; }
 
-/*
+.page2 {
+  margin: 0 0 0 10%; }
 
-#link1 {
-  margin: 0;
-  height: 15px;
-  width: 75px;
-  background: #6A6A61;
-  border-radius: 7px;
-  	h5{
-  	  margin: 4px 0 0 0;
-  	  padding: 0;
-		a{
-		 margin: 0 0 0 3%;
-		 font-size: 14px;
-		 padding: 0;
-		}
-	} 	
-}
-
-
-#link2 {
-  width: 100px;
-  height: 15px;
-  margin: 4px 0 0 0;
-  background: #958976;
-  border-radius: 7px;
-	h5{
-  	  margin: 0;
-  	  padding: 0;
-		a{
-		 margin: 0 0 0 3%;
-		 font-size: 14px;
-		 padding: 0;
-		}
-	} 	
-}
-
-
-#link3 {
-  background: $yellow;
-  height: 15px;
-  margin: 4px 0 0 0;
-  width: 125px;
-  border-radius: 7px;
-  	h5{
-  	  margin: 0;
-  	  padding: 0;
-		a{
-		 margin: 0 0 0 3%;
-		 font-size: 14px;
-		 padding: 0;
-		}
-	} 	
-}
-
-
-#link4 {
-  width: 100px;
-  height: 15px;
-  margin: 4px 0 0 0;
-  background: #958976;
-  border-radius: 7px;
-  	h5{
-  	  margin: 0;
-  	  padding: 0;
-		a{
-		 margin: 0 0 0 3%;
-		 font-size: 14px;
-		 padding: 0;
-		}
-	} 	
-}
-
-#link5 {
-  width: 75px;
-  height: 15px;
-  margin: 4px 0 0 0;
-  background: #6A6A61;
-  border-radius: 7px;
-  	h5{
-  	  margin: 0;
-  	  padding: 0;
-		a{
-		 margin: 0 0 0 3%;
-		 font-size: 14px;
-		 padding: 0;
-		}
-	} 	
-}
-
-
-*/
 * {
   margin: 0;
   padding: 0; }
@@ -394,9 +312,17 @@ body {
 header {
   height: 100%; }
 
+a {
+  color: #574C4A; }
+  a:hover {
+    color: #ddbf00; }
+
+.bio p {
+  margin-right: 5px; }
+
 #valk {
-  float: right;
-  margin-top: 6%;
+  vertical-align: middle;
+  margin: 0 0 0 10%;
   height: 260px;
   width: 260px;
   border-radius: 10px;
@@ -434,5 +360,17 @@ footer {
       text-decoration: none; }
       footer ul li a:hover {
         color: #ddbf00; }
+
+.moreInfo {
+  display: none; }
+
+.viewMore {
+  background: blue; }
+
+.workInfo {
+  display: none; }
+
+.active {
+  display: inline-block; }
 
 /*# sourceMappingURL=styles.css.map */
