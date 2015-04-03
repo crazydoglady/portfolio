@@ -415,6 +415,8 @@ nav ul {
 nav a {
   font-size: 2em;
   margin: 2% 0 0 0; }
+  nav a:hover {
+    color: #ddbf00; }
 
 .code {
   background: #D9D5C9;
@@ -424,7 +426,7 @@ nav a {
     overflow: scroll; }
 
 .work {
-  background: #A69F99;
+  background: #C0B7A9;
   display: none; }
   .work ul {
     height: 525px;
@@ -432,14 +434,14 @@ nav a {
 
 .art {
   display: none;
-  background: #8B8482; }
+  background: #A69F99; }
   .art ul {
     height: 525px;
     overflow: scroll; }
 
 .hounds {
   display: none;
-  background: #ddbf00; }
+  background: #8B8482; }
   .hounds article {
     height: 525px;
     overflow: scroll; }
@@ -490,7 +492,7 @@ section {
     margin: 4% 0 0 0;
     padding: 0;
     border-radius: 10px;
-    border: 5px solid #A69F99;
+    border: 5px solid #C0B7A9;
     box-shadow: 1px 1px 3px #574C4A; }
 
 .about {
@@ -548,7 +550,7 @@ footer {
   .activeNav a {
     color: #574C4A; }
     .activeNav a:hover {
-      color: #C0B7A9; }
+      color: #ddbf00; }
 
 .active {
   display: inline-block; }

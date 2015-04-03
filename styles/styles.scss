@@ -131,6 +131,9 @@ nav ul {
 nav a {
 	font-size: 2em;
 	margin: 2% 0 0 0;
+	&:hover {
+		color: $yellow;
+	}
 }
 
 .code {
@@ -143,7 +146,7 @@ nav a {
 }
 
 .work {
-	background: $ltgrey;
+	background: $neutral;
 	display: none;
 	ul {
 	  height: 525px;
@@ -153,7 +156,7 @@ nav a {
 
 .art {
 	display: none;
-	background: $grey;
+	background: $ltgrey;
 	ul {
 	  height: 525px;
 	  overflow: scroll;
@@ -162,9 +165,9 @@ nav a {
 
 .hounds {
 	display: none;
-	background: $yellow;
+	background: $grey;
 	article {
-		height: 525px;
+	  height: 525px;
 	  overflow: scroll;
 	}
 }
@@ -223,7 +226,7 @@ section {
 		margin: 4% 0 0 0;
 		padding: 0;
 		border-radius: 10px;
-		border: 5px solid $ltgrey;
+		border: 5px solid $neutral;
 		box-shadow: 1px 1px 3px $dkgrey;	
 	}
 }
@@ -294,7 +297,7 @@ footer {
   a {
   	color: $dkgrey;
   	&:hover{
-  		color: $neutral;
+  		color: $yellow;
   	}
   }
   
