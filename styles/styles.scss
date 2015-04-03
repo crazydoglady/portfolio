@@ -7,12 +7,14 @@
 	margin: 0;
 	padding: 0;
 }
+
 body{
 	margin: 0;
 	padding: 0;
 	background: white;
 	color:$dkgrey;
 }
+
 header {
 	height: 100%;
 }
@@ -23,11 +25,60 @@ a {
 	color: $yellow;
 	}	
 }
+
+.container2 {
+ @extend .container;
+ ul {
+	list-style-type: none;
+  li {
+  	display: inline-block;
+	a {
+		color: $dkgrey;
+	  }
+	}
+ }
+}
+
+.miniMenu {
+	display: inline-block;
+	margin: 0 0 0 1%;
+	padding: 0;
+	li {
+		display: inline-block;
+		line-height: 20px;
+		margin: 0;
+		padding: 0;
+		a {
+			color: white;
+			&:hover{
+			 color: white;	
+			}	
+		}
+	}
+}
+
+.resume {
+	display: none;
+}
+
+#education {
+
+	li {
+		height: 120px;
+	}
+}
+
+#skills {
+	float: right;
+	li{
+		margin: 0 0 0 4%;
+	}
+} 
+
 .bio {
 	p{
 		margin-right: 5px;
-	}
-	
+	}	
 }
 
 #valk {
@@ -45,8 +96,104 @@ a {
 	}
 }
 
+#experience {
+	list-style-type: none;
+	li{
+		height: 150px;
+		margin: 1% 0 0 3%;
+		background: $pale;
+		border-radius: 10px;
+		a{
+			color: $dkgrey;
+			&:hover{
+				color: white;
+			}	
+		}
+	}
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	li{
+		margin: 0;
+		padding: 0;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		display: inline-block;
+		a{
+
+		}
+	}
+}
+
+nav a {
+	font-size: 2em;
+	margin: 2% 0 0 0;
+}
+
+.code {
+	background: $pale;
+	display: none;
+	ul {
+	  height: 525px;
+	  overflow: scroll;
+	}
+}
+
+.work {
+	background: $ltgrey;
+	display: none;
+	ul {
+	  height: 525px;
+	  overflow: scroll;
+	}
+}
+
+.art {
+	display: none;
+	background: $grey;
+	ul {
+	  height: 525px;
+	  overflow: scroll;
+	}
+}
+
+.hounds {
+	display: none;
+	background: $yellow;
+	article {
+		height: 525px;
+	  overflow: scroll;
+	}
+}
+
+.devEx {
+	list-style-type: none;
+	display: inline-block;
+	margin-bottom: 20px;
+	}	
+
+.gallery {
+		text-align: center;
+		height: 500px;
+		p {
+			height: 120px;
+			overflow: scroll;
+		}
+		img {
+			border: 3px solid $dkgrey;
+			margin: 4% 0 0 0;
+			height: 230px;
+			width: 100%;
+			}
+	}
+.describe {
+	margin: 0 1% 0 1%;
+}
 section {
-	margin: 3% 0 5% 0;
+	margin: 0;
 	a {
 	  color: $dkgrey;
 	  text-decoration: none;
@@ -65,6 +212,57 @@ section {
 	 }
 	}
 }
+.artwork {
+	text-align: center;
+	list-style-type: none;
+	display: inline-block;
+	height : 300px;
+	img {
+		height: 250px;
+		width: 250px;
+		margin: 4% 0 0 0;
+		padding: 0;
+		border-radius: 10px;
+		border: 5px solid $ltgrey;
+		box-shadow: 1px 1px 3px $dkgrey;	
+	}
+}
+
+.about {
+	height: 100%;
+}
+
+
+	#ember, #billie {
+	 width: 150px;
+     height: 150px;
+     float: right;
+     margin: 0 0 0 2%;
+	 box-shadow: 3px 5px 5px $dkgrey;
+	 border-radius: 100%;
+	}
+
+	#ember {
+	 background: url('../images/ember.jpg');
+	 background-size: cover;
+	 &:hover{
+		background: url('../images/embertongue.jpg');
+		background-size: cover;
+		}
+	}
+		
+	#billie {
+	 background: url('../images/billie.jpg');
+	 background-size: cover;
+	 &:hover{
+		background: url('../images/billieroar.jpg');
+		background-size: cover;
+		}
+	}
+.billie, .ember {
+	margin-top: 2%;
+}	
+
 
 footer {
 	heigth: 75px;
@@ -91,6 +289,19 @@ footer {
 .workInfo {
 	display: none;
 }
+.activeNav {
+  display: inline-block;
+  a {
+  	color: $dkgrey;
+  	&:hover{
+  		color: $neutral;
+  	}
+  }
+  
+}
+
+
+
 .active {
 	display: inline-block;
 }

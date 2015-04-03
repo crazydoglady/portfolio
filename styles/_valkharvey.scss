@@ -1,4 +1,4 @@
-
+/*
 .container2 {
  @extend .container;
  ul {
@@ -105,13 +105,7 @@
 	height: 100%;
 }
 
-.dogs {
-	height: 75vh;
-	display: block;
-	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../images/swampDogs.jpg');
-	background-size: cover;
-	background-position: 0 -300px;
-	background-repeat: none;
+
 	#ember, #billie {
 	 width: 200px;
      height: 200px;
@@ -120,7 +114,6 @@
 	 box-shadow: 3px 5px 5px $dkgrey;
 	 border-radius: 100%;
 	}
-}
 
 	#ember {
 	 background: url('../images/ember.jpg');
@@ -146,3 +139,4 @@
 .page2 {
 	margin: 0 0 0 10%;
 }
+*/

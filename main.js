@@ -9,8 +9,15 @@ var myPage = {
 	initEvents: function() {
 		$('#more').on('click', function (event){
 			event.preventDefault();
-			$('.resume').toggleClass('active');
+			$('#education').toggleClass('active');
 			$('#more').hide();
+		});
+		$("nav a").click(function(event) {
+    		event.preventDefault();
+    		var relatedClass = "." + $(this).attr('rel');
+    		$(relatedClass).addClass('active');
+    		$(relatedClass).siblings('section').removeClass("active");
+			//$(this).closest('section').siblings().toggleClass('active');
 		});
 
 	}
