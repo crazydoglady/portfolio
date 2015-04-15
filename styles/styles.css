@@ -341,6 +341,22 @@ a {
   a:hover {
     color: #ddbf00; }
 
+#contactWrap {
+  margin: 0 auto; }
+
+.contactIcons {
+  margin: 3%; }
+
+.modal {
+  z-index: 9999; }
+
+.btn-primary {
+  margin-top: 2%;
+  background: #8B8482;
+  border: 1px solid #574C4A; }
+  .btn-primary:hover {
+    background: #ddbf00; }
+
 .container2 ul {
   list-style-type: none; }
   .container2 ul li {
@@ -364,6 +380,9 @@ a {
 
 .resume {
   display: none; }
+
+object {
+  height: 500px; }
 
 #education li {
   height: 120px; }

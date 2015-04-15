@@ -25,6 +25,25 @@ a {
 	color: $yellow;
 	}	
 }
+#contactWrap {
+	margin: 0 auto;
+}
+
+.contactIcons {
+	margin: 3%;
+}
+
+.modal {
+	z-index: 9999;
+}
+
+.btn-primary {
+	margin-top: 2%;
+	background: $grey;
+	border: 1px solid $dkgrey;
+	&:hover{
+		background: $yellow;
+}}
 
 .container2 {
  @extend .container;
@@ -59,6 +78,10 @@ a {
 
 .resume {
 	display: none;
+}
+
+object {
+	height: 500px;
 }
 
 #education {
