@@ -460,10 +460,10 @@ nav a {
 
 .hounds {
   display: none;
-  background: #8B8482; }
+  background: #8B8482;
+  overflow: scroll; }
   .hounds article {
-    height: 300px;
-    overflow: scroll; }
+    height: 200px; }
 
 .devEx {
   list-style-type: none;

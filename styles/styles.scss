@@ -189,9 +189,9 @@ nav a {
 .hounds {
 	display: none;
 	background: $grey;
+	overflow: scroll;
 	article {
-	  height: 300px;
-	  overflow: scroll;
+	  height: 200px;
 	}
 }
 
