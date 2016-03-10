@@ -542,8 +542,17 @@ section {
 .billie, .ember {
   margin-top: 2%; }
 
+img.orchidpic {
+  height: 250px;
+  width: 250px;
+  margin: 4% 0 0 0;
+  padding: 0;
+  border-radius: 10px;
+  border: 5px solid #C0B7A9;
+  box-shadow: 1px 1px 3px #574C4A; }
+
 footer {
-  heigth: 75px;
+  height: 75px;
   border-top: 2px solid #ddbf00;
   background: #A69F99; }
   footer ul li {

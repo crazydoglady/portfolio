@@ -23,7 +23,7 @@ a {
 	color: $dkgrey;
    &:hover {
 	color: $yellow;
-	}	
+	}
 }
 #contactWrap {
 	margin: 0 auto;
@@ -70,8 +70,8 @@ a {
 		a {
 			color: white;
 			&:hover{
-			 color: white;	
-			}	
+			 color: white;
+			}
 		}
 	}
 }
@@ -96,12 +96,12 @@ object {
 	li{
 		margin: 0 0 0 4%;
 	}
-} 
+}
 
 .bio {
 	p{
 		margin-right: 5px;
-	}	
+	}
 }
 
 #valk {
@@ -130,7 +130,7 @@ object {
 			color: $dkgrey;
 			&:hover{
 				color: white;
-			}	
+			}
 		}
 	}
 }
@@ -199,7 +199,7 @@ nav a {
 	list-style-type: none;
 	display: inline-block;
 	margin-bottom: 20px;
-	}	
+	}
 
 .gallery {
 		text-align: center;
@@ -226,7 +226,7 @@ section {
 	  &:hover{
 		color: $yellow;
 			}
-		}	
+		}
 }
 
 #more {
@@ -250,7 +250,7 @@ section {
 		padding: 0;
 		border-radius: 10px;
 		border: 5px solid $neutral;
-		box-shadow: 1px 1px 3px $dkgrey;	
+		box-shadow: 1px 1px 3px $dkgrey;
 	}
 }
 
@@ -276,7 +276,7 @@ section {
 		background-size: cover;
 		}
 	}
-		
+
 	#billie {
 	 background: url('../images/billie.jpg');
 	 background-size: cover;
@@ -287,11 +287,20 @@ section {
 	}
 .billie, .ember {
 	margin-top: 2%;
-}	
+}
+img.orchidpic {
+	height: 250px;
+	width: 250px;
+	margin: 4% 0 0 0;
+	padding: 0;
+	border-radius: 10px;
+	border: 5px solid $neutral;
+	box-shadow: 1px 1px 3px $dkgrey;  
+}
 
 
 footer {
-	heigth: 75px;
+	height: 75px;
 	border-top: 2px solid $yellow;
 	background: $ltgrey;
 	ul li {
@@ -303,7 +312,7 @@ footer {
 			&:hover{
 				color: $yellow;
 			}
-		}	
+		}
 	}
 }
 .moreInfo {
@@ -323,7 +332,7 @@ footer {
   		color: $yellow;
   	}
   }
-  
+
 }
 
 
@@ -331,6 +340,3 @@ footer {
 .active {
 	display: inline-block;
 }
-
-
-
